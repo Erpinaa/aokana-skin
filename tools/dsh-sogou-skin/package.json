@@ -1,0 +1,100 @@
+{
+  "name": "@dsh-external/dsh-sogou-skin",
+  "version": "0.2.0",
+  "description": "DSH 搜狗皮肤工坊：解析/制作/预览/校验/打包/安装搜狗输入法皮肤（.ssf）。零第三方依赖，自带纯 JS 的 PNG/BMP 编解码、ZIP 与三代 .ssf 容器、九宫格窗口模型、皮肤装配器与引擎级预览渲染器。",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "dsh-sogou-skin": "src/cli.js"
+  },
+  "exports": {
+    ".": {
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "skills",
+    "docs",
+    "scripts",
+    "examples",
+    "dsh.plugin.json",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "ASSET_NOTICE.md"
+  ],
+  "scripts": {
+    "test": "node test/run.mjs",
+    "test:all": "node test/run.mjs --all",
+    "verify:real": "node scripts/verify-real-samples.mjs",
+    "images": "node docs/make-images.mjs",
+    "example": "node examples/draw-showcase.mjs"
+  },
+  "license": "MIT",
+  "engines": {
+    "dsh": ">=0.1.5",
+    "node": ">=18"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "sogou",
+    "ssf",
+    "skin",
+    "input-method",
+    "deepseek-harness",
+    "sogou-skin",
+    "skin-editor",
+    "nine-slice"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yan-mc/dsh-sogou-skin.git"
+  },
+  "homepage": "https://github.com/yan-mc/dsh-sogou-skin",
+  "bugs": {
+    "url": "https://github.com/yan-mc/dsh-sogou-skin/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dshx": {
+    "contributes": {
+      "tools": [
+        "skin_requirements",
+        "skin_init",
+        "skin_scan_assets",
+        "skin_assign",
+        "skin_assemble",
+        "skin_preview",
+        "skin_repair",
+        "skin_pack",
+        "skin_inspect",
+        "skin_unpack",
+        "skin_validate",
+        "skin_overlay_presets",
+        "skin_install",
+        "skin_list_installed"
+      ],
+      "skills": [
+        "sogou-skin-authoring"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "@deepseek-ai/dsh-tools": "*",
+    "@deepseek-ai/dsh-skill": "*"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-skill": {
+      "optional": true
+    }
+  }
+}

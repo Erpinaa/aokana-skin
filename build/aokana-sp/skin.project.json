@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "name": "苍之彼方·四重奏（双拼）",
+  "author": "aokana-skin-build",
+  "info": "《苍之彼方的四重奏》对话框风格候选窗 · v0.12 等比缩小0.85 + 隐藏展开/菜单按钮",
+  "skinVersion": "1.10",
+  "skinTime": "2026.11.19",
+  "assetDir": "assets",
+  "outDir": "build",
+  "autoGenerate": true,
+  "assets": {
+    "scale": 1
+  },
+  "roles": {
+    "panel_h": {
+      "source": "assets/h1/panel_h_sp_v12.png",
+      "margins": {
+        "pinyin_marge": [
+          48,
+          2,
+          44,
+          102
+        ],
+        "zhongwen_marge": [
+          12,
+          7,
+          44,
+          102
+        ]
+      }
+    },
+    "panel_v": {
+      "source": "assets/v1/panel_v_sp_v12.png",
+      "margins": {
+        "pinyin_marge": [
+          52,
+          7,
+          15,
+          15
+        ],
+        "zhongwen_marge": [
+          28,
+          7,
+          15,
+          15
+        ]
+      }
+    },
+    "bar": {
+      "source": "assets/statusbar/bar_v04.png"
+    },
+    "cn_en": {
+      "sources": {
+        "cn": "assets/icons/v04/cn1.png",
+        "en": "assets/icons/v04/en1.png",
+        "a": "assets/icons/v04/a1.png"
+      },
+      "states": {
+        "hover": {
+          "cn": "assets/icons/v04/cn2.png",
+          "en": "assets/icons/v04/en2.png",
+          "a": "assets/icons/v04/a2.png"
+        },
+        "down": {
+          "cn": "assets/icons/v04/cn3.png",
+          "en": "assets/icons/v04/en3.png",
+          "a": "assets/icons/v04/a3.png"
+        }
+      }
+    }
+  },
+  "nineSlice": {
+    "panel_h": {
+      "left": 201,
+      "right": 20,
+      "top": 37,
+      "bottom": 10
+    },
+    "panel_v": {
+      "left": 0,
+      "right": 0,
+      "top": 37,
+      "bottom": 5
+    }
+  },
+  "buttons": {
+    "enabled": [
+      "cn_en"
+    ],
+    "pos": {
+      "cn_en": [
+        4,
+        4
+      ]
+    }
+  },
+  "display": {
+    "fontSize": 17,
+    "fontCh": "微软雅黑 Bold",
+    "fontEn": "微软雅黑 Bold"
+  },
+  "theme": {
+    "pinyinColor": "#6e6e6e",
+    "firstColor": "#2a93c6",
+    "zhongwenColor": "#6e6e6e",
+    "compHintColor": "#8ca6b2"
+  },
+  "icon": {
+    "w": 56,
+    "h": 56,
+    "format": "png"
+  }
+}

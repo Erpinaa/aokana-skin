@@ -1,0 +1,30 @@
+{
+  "id": "@dsh-external/dsh-sogou-skin",
+  "version": "0.2.0",
+  "main": "./src/index.js",
+  "description": "搜狗输入法皮肤工坊：制作 + 引擎级预览 + 校验 + 打包 + 安装 .ssf（十四工具 + 一技能，零第三方依赖）",
+  "engines": {
+    "dsh": ">=0.1.5"
+  },
+  "contributes": {
+    "tools": [
+      "skin_requirements",
+      "skin_init",
+      "skin_scan_assets",
+      "skin_assign",
+      "skin_assemble",
+      "skin_preview",
+      "skin_repair",
+      "skin_pack",
+      "skin_inspect",
+      "skin_unpack",
+      "skin_validate",
+      "skin_overlay_presets",
+      "skin_install",
+      "skin_list_installed"
+    ],
+    "skills": [
+      "sogou-skin-authoring"
+    ]
+  }
+}

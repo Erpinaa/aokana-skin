@@ -1,0 +1,80 @@
+# ============================================================================
+# 1. 第三方样本、官方安装包、参考原图与内部立项/过程设计稿（仅本地保留）
+# ============================================================================
+research/
+ref/
+项目书.md
+docs/设计稿-*.md
+build/三包差异摘要.md
+
+# ============================================================================
+# 2. 自动化测试、解包副本与中间校验产物
+# ============================================================================
+qa/
+build/*/preview/
+
+# ============================================================================
+# 3. 历史迭代包与中间版本素材（仅保留当前最终版 v0.12 及母版）
+# ============================================================================
+dist/v0.3/
+dist/v0.4/
+dist/v0.5/
+dist/v0.6/
+dist/v0.7/
+dist/v0.8/
+dist/v0.9/
+dist/v0.10/
+dist/v0.11/
+dist/aokana-zh-demo.ssf
+
+assets/h1/*_v04.png
+assets/h1/*_v07.png
+assets/h1/*_v09.png
+assets/h1/*_v10.png
+assets/v1/*_v04.png
+build/*/assets/panel_h_*.png
+build/*/assets/h1/*_v03.png
+build/*/assets/h1/*_v04.png
+build/*/assets/h1/*_v07.png
+build/*/assets/h1/*_v09.png
+build/*/assets/h1/*_v10.png
+build/*/assets/h1/*_v11.png
+build/*/assets/v1/panel_v.png
+build/*/assets/v1/panel_v_en.png
+build/*/assets/v1/panel_v_sp.png
+build/*/assets/v1/*_v03.png
+build/*/assets/v1/*_v04.png
+build/*/assets/icons/*.png
+build/*/assets/icons/v03/
+build/*/assets/statusbar/bar.png
+build/*/assets/statusbar/bar_v03.png
+
+# ============================================================================
+# 4. 含有游戏原画对比或早期废弃/过程草稿的文档配图（仅保留 README 用到的3张正式预览图）
+# ============================================================================
+docs/images/*
+!docs/images/final_preview_v12.png
+!docs/images/nameplate_variants.png
+!docs/images/draft_status_balls.png
+
+# ============================================================================
+# 5. 一次性调试/取色/拆包临时脚本（保留核心构建脚本与工具链）
+# ============================================================================
+tools/*.py
+!tools/make_skin_v2.py
+!tools/make_v03_assets.py
+!tools/make_v04_assets.py
+!tools/update_v11_projects.py
+!tools/update_v12_projects.py
+!tools/final_preview_v12.py
+
+# ============================================================================
+# 6. 系统与编辑器常见忽略项
+# ============================================================================
+__pycache__/
+*.py[cod]
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+node_modules/
